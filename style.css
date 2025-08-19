@@ -10,6 +10,7 @@ body{
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    
 }
 header{
     width: 100%;
@@ -20,6 +21,13 @@ header{
     padding-block: 16px;
     gap: 16px;
     margin-inline: 8px;
+    
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     
 }
 .busca{
@@ -72,15 +80,33 @@ menu a{
     list-style: none;
 }
 h2{
-    margin-left: 24px;
+    
     font-weight: 550;
-
+}
+.container-produtos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.categoria-produto{
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.categoria-produto h2{
+    margin-left: 8px;
 }
 .produtos{
-    width: 90%;
+    width: 100%;
     height: 300px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     padding-block: 0;
     box-shadow: 0 0 8px #000;
     border-radius: 12px;
@@ -97,6 +123,7 @@ h2{
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    border: 1px solid black;
 }
 .cards img{
     width: 50%;
