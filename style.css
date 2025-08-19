@@ -40,8 +40,9 @@ main{
     width: 200px;
 }
 .busca input{
-    height: 50px;
+    height: 30px;
     width: 300px;
+    text-align: center;
 }
 menu{
     width: 100%;
