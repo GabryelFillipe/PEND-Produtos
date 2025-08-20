@@ -2,7 +2,7 @@
 
 import produtos from "./produtos_atualizados.json" with{type: "json"}
 
-function criarProdutos(produto){
+function criarProdutos(produtos_atualizados){
 
     const containerProdutos = document.getElementById('produto')
     const card = document.createElement('div')
