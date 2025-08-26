@@ -2,16 +2,30 @@
 
 import produtos from "./produtos_atualizados.json" with{type: "json"}
 
-function criarProdutos(produtos, containerDestino){
+function carregarClassificacao(classificacao) {
 
-   // const containerProdutos = document.getElementById('produto')
+    const estrela ={
+
+    1 :'★☆☆☆☆',
+    2 :'★★☆☆☆',
+    3 :'★★★☆☆',
+    4 : '★★★★☆',
+    5 : '★★★★★'
+    }
+
+    return estrela[classificacao];
+}
+
+function criarProdutos(produtos, containerDestino,) {
+
+    // const containerProdutos = document.getElementById('produto')
     const card = document.createElement('div')
     card.classList.add('cards')
     card.setAttribute('id', 'card')
 
     const imagemProduto = document.createElement('img')
     imagemProduto.src = produtos.imagem
-    
+
 
     const nomeProduto = document.createElement('span')
     nomeProduto.textContent = produtos.nome
@@ -21,7 +35,7 @@ function criarProdutos(produtos, containerDestino){
     const descricaoProduto = document.createElement('p')
     descricaoProduto.textContent = produtos.descricao
     descricaoProduto.classList.add('descricao')
-    
+
     const preco = document.createElement('p')
     preco.textContent = produtos.preco
     preco.classList.add('preco')
@@ -30,43 +44,51 @@ function criarProdutos(produtos, containerDestino){
     categoria.textContent = produtos.categoria
     categoria.classList.add('categoria')
 
-    mensagem(card,nomeProduto)
+    const classificacaoProduto = document.createElement('h3')
+    classificacaoProduto.textContent = carregarClassificacao(produtos.classificacao)
+
+    mensagem(card, nomeProduto)
 
     containerDestino.appendChild(card)
     card.appendChild(imagemProduto)
     card.appendChild(nomeProduto)
     card.appendChild(descricaoProduto)
     card.appendChild(preco)
+    card.appendChild(classificacaoProduto)
     card.appendChild(categoria)
 
-    
-   
+
+
 }
-function carregarProdutos(){
-    
+function carregarProdutos() {
+
     const containerGrupo1 = document.getElementById('produto1');
     const containerGrupo2 = document.getElementById('produto2');
-    const primeirosProdutos = produtos.slice(0,5)
-    const ultimosProdutos = produtos.slice(5,10)
+    const primeirosProdutos = produtos.slice(0, 5)
+    const ultimosProdutos = produtos.slice(5, 10)
 
     primeirosProdutos.forEach(produtos => {
-     
+
         criarProdutos(produtos, containerGrupo1);
     });
 
 
     ultimosProdutos.forEach(produtos => {
- 
+
         criarProdutos(produtos, containerGrupo2);
     });
-    
+
 }
 carregarProdutos()
 
-function mensagem(card, nomeProduto){
-card.addEventListener('click', () => {
-    alert(`O produto selecionado foi ${nomeProduto.textContent}`)
-})
-    
+
+
+
+
+function mensagem(card, nomeProduto) {
+    card.addEventListener('click', () => {
+        alert(`O produto selecionado foi ${nomeProduto.textContent}`)
+    })
+
 }
- 
+

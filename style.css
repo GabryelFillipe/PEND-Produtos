@@ -154,6 +154,9 @@ h2{
     text-align: center;
     overflow: hidden;
 }
+.cards h3{
+    width: 8vw;
+}
 .cards img{
     margin-top: 28px;
     width: 8vw;
