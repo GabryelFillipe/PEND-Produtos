@@ -8,9 +8,9 @@ body{
     height: 100dvh;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     align-items: center;
-    
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 header{
     width: 100%;
@@ -18,10 +18,13 @@ header{
     justify-content: center;
     background-color: yellow;
     flex-direction: column;
-    padding-block: 16px;
+    padding-block: 8px;
     gap: 16px;
     margin-inline: 8px;
-    
+}
+i{
+    width: 16px;
+    height: 16px;
 }
 main{
     width: 100%;
@@ -104,10 +107,9 @@ h2{
 }
 .produtos{
     width: 90vw;
-    height: 300px;
+    height: 40vh;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    
     align-items: center;
     justify-content: space-evenly;
     padding-block: 0;
@@ -115,30 +117,40 @@ h2{
     border-radius: 12px;
     background-color: white;
     margin-inline: 8px;
+    
 }
-.produtos:hover
+.cards:hover{
+    box-shadow: 2px 2px 8px #CCC;
+}
 
 .cards{
-    width: 250px;
+    width: 20vw;
+    height: 36vh;
     overflow: hidden;
     gap: 4px;
-    margin-inline: 8px;
+    /* margin-inline: 8px; */
+    padding-left: 2px;
+    padding-right: 2px;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    
+    transition: .5s;
+    text-align: center;
+    overflow: hidden;
 }
 .cards img{
-    width: 50%;
-    height: 130px;
+    width: 8vw;
+    height: 16vh;
 }
-.cards span{
-    font-size: 18px;
+.nome{
+    font-size: 20px;
 }
 .descricao{
-    font-size: 12px;
+    font-size: 14px;
+    width: 16vw;
 }
 .categoria{
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 500;
 }

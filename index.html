@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer type="module"></script>
     <title>PEND-Produtos</title>
@@ -11,15 +12,17 @@
 <body>
     <header>
         <div class="busca">
-            <img src="./img/" alt="logo">
-            <input type="text"  placeholder="Buscar Produtos">
+            <img src="./img/logo1.png" alt="logo">
+            <div class="caixaBusca">
+                <input type="text"  placeholder="Buscar Produtos">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
             <img src="./img/" alt="">
         </div>
             <menu>
                 <div class="cep">
-                    <span class="material-symbols-outlined">
-                        location_on
-                        </span>
+                    <i class="fa-solid fa-location-dot"></i>
                         <a href="#">Informe seu CEP</a> 
                 </div>
                 <div class="servicos">
@@ -46,8 +49,8 @@
                     </li>
                     <li>
                         <a href="#">Compras</a>
-                        
                     </li>
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </menu>
     </header>
