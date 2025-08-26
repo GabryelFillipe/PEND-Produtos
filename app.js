@@ -7,6 +7,7 @@ function criarProdutos(produtos, containerDestino){
    // const containerProdutos = document.getElementById('produto')
     const card = document.createElement('div')
     card.classList.add('cards')
+    card.setAttribute('id', 'card')
 
     const imagemProduto = document.createElement('img')
     imagemProduto.src = produtos.imagem
@@ -29,18 +30,22 @@ function criarProdutos(produtos, containerDestino){
     categoria.textContent = produtos.categoria
     categoria.classList.add('categoria')
 
+    mensagem(card,nomeProduto)
+
     containerDestino.appendChild(card)
     card.appendChild(imagemProduto)
     card.appendChild(nomeProduto)
     card.appendChild(descricaoProduto)
     card.appendChild(preco)
     card.appendChild(categoria)
+
+    
+   
 }
 function carregarProdutos(){
     
     const containerGrupo1 = document.getElementById('produto1');
     const containerGrupo2 = document.getElementById('produto2');
-    //produtos.forEach(criarProdutos)
     const primeirosProdutos = produtos.slice(0,5)
     const ultimosProdutos = produtos.slice(5,10)
 
@@ -57,3 +62,11 @@ function carregarProdutos(){
     
 }
 carregarProdutos()
+
+function mensagem(card, nomeProduto){
+card.addEventListener('click', () => {
+    alert(`O produto selecionado foi ${nomeProduto.textContent}`)
+})
+    
+}
+ 
