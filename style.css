@@ -160,10 +160,11 @@ h2{
     height: 16vh;
 }
 .nome{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 500;
 }
 .descricao{
-    font-size: 14px;
+    font-size: 12px;
     width: 16vw;
 }
 .categoria{
