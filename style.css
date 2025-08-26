@@ -8,7 +8,7 @@ body{
     height: 100dvh;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
     align-items: center;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
@@ -16,11 +16,16 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: yellow;
+    background-color: #565658;
     flex-direction: column;
     padding-block: 8px;
     gap: 16px;
     margin-inline: 8px;
+}
+header img{
+    width: 12vw;
+    height: 8vh;
+    border-radius: 12px;
 }
 i{
     width: 16px;
@@ -63,8 +68,17 @@ menu a{
     justify-content: space-between;
     gap: 20px;
 }
-.servicos li{
+li{
+    display: flex;
     list-style: none;
+    text-align: center;
+    align-items: center;
+}
+li:hover{
+    background-color: #e0d6d6;
+    box-shadow: 0 4px 4px #0004; 
+    border-radius: 4px;
+   
 }
 .cep{
     align-items: center;
@@ -75,16 +89,19 @@ menu a{
 .cep a{
     width: 100px;
     text-align: center;
-    
+}
+.cep a:hover{
+    background-color: #e0d6d6;
+    box-shadow: 0 4px 4px #0004; 
 }
 .login{
     display: flex;
     justify-content: space-between;
     gap: 20px;
     list-style: none;
+    align-items: center;
 }
 h2{
-    
     font-weight: 550;
 }
 .container-produtos{
@@ -109,7 +126,6 @@ h2{
     width: 90vw;
     height: 40vh;
     display: flex;
-    
     align-items: center;
     justify-content: space-evenly;
     padding-block: 0;
@@ -117,6 +133,7 @@ h2{
     border-radius: 12px;
     background-color: white;
     margin-inline: 8px;
+    gap: 4px;
     
 }
 .cards:hover{
@@ -128,9 +145,6 @@ h2{
     height: 36vh;
     overflow: hidden;
     gap: 4px;
-    /* margin-inline: 8px; */
-    padding-left: 2px;
-    padding-right: 2px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -140,6 +154,7 @@ h2{
     overflow: hidden;
 }
 .cards img{
+    margin-top: 24px;
     width: 8vw;
     height: 16vh;
 }
