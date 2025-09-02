@@ -185,3 +185,50 @@ footer a{
     font-weight: 500;
     text-decoration: none;
 }
+
+.span-produtos{
+    position: absolute;
+    width: 60vw;
+    height: 50dvh;
+    background-color: grey;
+    top: 30%;
+    z-index: 50;
+    box-shadow: 0 0 2px #000;
+    border-radius: 12px;
+    display: flex;
+    
+    align-items: center;
+    gap: 104px;
+}
+.span-produtos img{
+    position: relative;
+    width: 30vh;
+    height: 15dvw;
+    margin-left: 100px;
+}
+.texto-span{
+    width: 80vw;
+    height: 50dvh;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.texto-span .nome{
+    font-size: 32px;
+}
+.texto-span .descricao{
+    width: 30vw;
+    font-size: 24px;
+}
+.texto-span .preco{
+    width: 30vw;
+    font-size: 20px;
+    font-weight: 600;
+}
+.texto-span .classificacao{
+    font-size: 24px;
+}
+.texto-span .categoria{
+    font-size: 28px;
+}

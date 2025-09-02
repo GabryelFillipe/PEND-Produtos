@@ -57,7 +57,7 @@
     "id": 7,
     "nome": "Caixa de Som JBL Flip 5",
     "descricao": "Caixa de som portátil com Bluetooth, resistente à água e bateria com duração de até 12 horas",
-    "preco": "RS: 499.99",
+    "preco": "R$: 499.99",
     "imagem": "./img/caixa-de-som-jbl-flip-5.png",
     "categoria": "Eletrônicos",
     "classificacao": 3
@@ -66,7 +66,7 @@
     "id": 8,
     "nome": "Fone de Ouvido Bluetooth JBL Tune 500BT",
     "descricao": "Fone de ouvido com conectividade Bluetooth, bateria com duração de até 16 horas e microfone integrado",
-    "preco": "RS: 299.99",
+    "preco": "R$: 299.99",
     "imagem": "./img/fone-de-ouvido-bluetooth-jbl-tune-500bt.png",
     "categoria": "Eletrônicos",
     "classificacao": 4
