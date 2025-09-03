@@ -188,11 +188,11 @@ footer a{
 
 .span-produtos{
     position: absolute;
-    width: 60vw;
+    max-width: 60%;
     height: 50dvh;
     background-color: grey;
     top: 30%;
-    z-index: 50;
+    z-index: 1000;
     box-shadow: 0 0 2px #000;
     border-radius: 12px;
     display: flex;
@@ -202,7 +202,7 @@ footer a{
 }
 .span-produtos img{
     position: relative;
-    width: 30vh;
+    max-width: 30vh;
     height: 15dvw;
     margin-left: 100px;
 }
@@ -232,3 +232,12 @@ footer a{
 .texto-span .categoria{
     font-size: 28px;
 }
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999;
+  }

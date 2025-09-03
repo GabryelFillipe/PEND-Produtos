@@ -49,7 +49,7 @@ function criarProdutos(produtos, containerDestino,) {
     const classificacaoProduto = document.createElement('h3')
     classificacaoProduto.textContent = carregarClassificacao(produtos.classificacao)
 
-    mensagem(card, nomeProduto, idProduto)
+    mensagem(card, produtos)
 
     containerDestino.appendChild(card)
     card.appendChild(imagemProduto)
@@ -87,13 +87,34 @@ carregarProdutos()
 
 
 
-function mensagem(card, nomeProduto, idProduto) {
+function mensagem(card, produtoClicado) {
     card.addEventListener('click', () => {
-        alert(`O produto selecionado foi ${nomeProduto.textContent}`)
-       
-        
+        // Remove o modal e o fundo antigos, se existirem
+        const spanExistente = document.getElementById('span-produtos');
+        const overlayExistente = document.getElementById('modal-overlay');
+        if (spanExistente) {
+            spanExistente.remove();
+        }
+        if (overlayExistente) {
+            overlayExistente.remove();
+        }
 
-    })
+        // Cria o fundo escurecido
+        const overlay = document.createElement('div');
+        overlay.id = 'modal-overlay';
+        overlay.className = 'modal-overlay';
+        document.body.appendChild(overlay);
+
+        // Cria o modal do produto
+        criarSpan(produtoClicado);
+
+        // Adiciona um evento para fechar o modal ao clicar no fundo
+        overlay.addEventListener('click', () => {
+            const spanParaRemover = document.getElementById('span-produtos');
+            if(spanParaRemover) spanParaRemover.remove();
+            overlay.remove();
+        });
+    });
 }
 function criarSpan(produtos){
 
@@ -135,5 +156,6 @@ function criarSpan(produtos){
         textoSpan.appendChild(classificacaoProduto)
         textoSpan.appendChild(categoria)
 
+        document.body.appendChild(spanProdutos)
 }
 
