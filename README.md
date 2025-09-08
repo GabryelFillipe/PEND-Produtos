@@ -29,4 +29,4 @@ Não é necessária nenhuma instalação adicional para rodar o projeto.
 
 Este projeto foi desenvolvido por **Gabryel Fillipe**. Conecte-se comigo no LinkedIn\!
 
-[\<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge\&logo=linkedin\&logoColor=white" /\>](https://www.linkedin.com/in/gabryel-fillipe/)
+[./img/linkedin_icon.svg](https://www.linkedin.com/in/gabryel-fillipe/)
