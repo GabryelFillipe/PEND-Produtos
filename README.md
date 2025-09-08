@@ -29,4 +29,4 @@ Não é necessária nenhuma instalação adicional para rodar o projeto.
 
 Este projeto foi desenvolvido por **Gabryel Fillipe**. Conecte-se comigo no LinkedIn\!
 
-[./img/linkedin_icon.svg](https://www.linkedin.com/in/gabryel-fillipe/)
+[linkedin_icon.svg.png](https://www.linkedin.com/in/gabryel-fillipe/)
